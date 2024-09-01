@@ -1,7 +1,5 @@
 package com.service;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -122,9 +120,9 @@ public class BookServiceImpl implements BookService{
 		        int rowsAffected = preparedStatement.executeUpdate();
 		        
 		        if (rowsAffected > 0) {
-		            //System.out.println("Book with id " + book.getBookId() + " updated successfully.");
+		            System.out.println("Book with id " + id + " updated successfully.");
 		        } else {
-		           // System.out.println("No book found with id " + book.getBookId() + ".");
+		            System.out.println("No book found with id " + id + ".");
 		        }
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
